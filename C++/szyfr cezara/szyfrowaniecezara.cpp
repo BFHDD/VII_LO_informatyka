@@ -27,18 +27,12 @@ int main()
             if(x >= 65 && x <= 90)
                 x = div(x+ehash-65,26).rem+65;
             text[i] = x;
-            if(x >= 97 && x <= 122)
-                x = div(x+ehash-97,26).rem+97;
-            text[i] = x;
         }
     else
         for(int i = 0; i < 1000;i++){
             int x = text[i];
             if(x >= 65 && x <= 90)
                 x = div(x-ehash+65,26).rem+65;
-            text[i] = x;
-            if(x >= 97 && x <= 122)
-                x = div(x-ehash+97,26).rem+97;
             text[i] = x;
         }
     cout << text << endl;
