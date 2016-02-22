@@ -4,6 +4,8 @@
  * samych warunkach 4.0 Międzynarodowe. Aby zapoznać
  * się z tekstem licencji wejdź na stronę
  * http://creativecommons.org/licenses/by-nc-sa/4.0/.
+ *
+ * Made by Dariusz Czajkowski 2015
  */
 
 // Coding and decoding
@@ -46,7 +48,7 @@ int main() {
 	int action; // coding/decoding action
 
 	cout<<"Witaj w Piano - the cezar coder/decoder ver. 1.0\n";
-	cout<<"Copyright (C) by Dariusz Czajkowski\n";
+	cout<<"Made by Dariusz Czajkowski\n";
 	cout<<"Made in Krakow, Poland 2015\n\n";
 	cout<<"Program sluzy do szyfrowania i odszyfrowywania systemem cezara.\nDozwolone sa tylko wielkie litery, spacje, kropki, przecinki i entery.\nReszta nie zostanie poprawnie zaszyfrowana.\n\n";
 	cout<<"Wybierz akcje, aby kontynuowac:\n";
@@ -93,7 +95,7 @@ int main() {
 		ofstream customfile2;
 		customfile2.open("zaszyfrowany.txt");
 		customfile2 << "Plik zostal zaszyfrowany przy pomocy programu Piano the cezar coder/decoder ver. 1.0\n";
-		customfile2 << "Copyright (C) by Dariusz Czajkowski\n\n" << tab;
+		customfile2 << "Made by Dariusz Czajkowski\n\n" << tab;
 		customfile2.close();
 		cout << "Plik zostal pomyslnie zaszyfrowany do <zaszyfrowany.txt>.\n";
 	} else if (action == 2) {
@@ -102,7 +104,7 @@ int main() {
 		ofstream customfile2;
 		customfile2.open("odszyfrowany.txt");
 		customfile2 << "Plik zostal zaszyfrowany przy pomocy programu Piano the cezar coder/decoder ver. 1.0\n";
-		customfile2 << "Copyright (C) by Dariusz Czajkowski\n\n" << tab;
+		customfile2 << "Made by Dariusz Czajkowski\n\n" << tab;
 		customfile2.close();
 		cout << "Plik zostal pomyslnie odszyfrowany do <odszyfrowany.txt>.\n";
 	}
