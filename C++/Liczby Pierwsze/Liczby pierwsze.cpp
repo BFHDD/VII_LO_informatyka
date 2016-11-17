@@ -2,7 +2,6 @@
 // Nie kopiuj pozmieiaj cos i oddaj Jobsowi ;)
 
 #include "iostream"
-#include "cmath"
 using namespace std;
 
 int main()
@@ -13,7 +12,7 @@ int main()
 	for (int i = 2; i <= zakres; i++){
 		bool ok = true;
 		for (int j = 2; j < i; j++){
-			if (div(i, j).rem == 0){
+			if (i % j == 0){
 				ok = false;
 			}
 		}
